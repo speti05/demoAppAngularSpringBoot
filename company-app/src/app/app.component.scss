@@ -1,0 +1,23 @@
+.main-container{
+    position: relative;
+    width:70%;
+    margin: 0 auto;
+    .top-menu {
+        width: 100%;
+    }
+    .top-cover {
+        background-image: url("/assets/images/company-cover.jpg");
+        width: 100%;
+        background-size: cover;
+        height: 320px;
+        .page-title {
+            position: absolute;
+            top: 60px;
+            right: 80px;
+        }
+    }
+}
+.content-container{
+    background: #424242;
+    padding: 20px;
+}
