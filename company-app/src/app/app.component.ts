@@ -14,8 +14,8 @@ export class AppComponent {
   isAuthenticated = this.loginService.authenticated;
   
   constructor(private loginService: LoginService, private http: HttpClient, private router: Router) {
-    this.loginService.authenticate(undefined, undefined);
-    console.log("cOMPENT ISAUTHENTICATED?",this.isAuthenticated);
+/*     this.loginService.authenticate(undefined, undefined);
+    console.log("cOMPENT ISAUTHENTICATED?",this.isAuthenticated); */
   }
   
   logout() {
