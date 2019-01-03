@@ -1,8 +1,8 @@
 <div *ngIf="message != ''">
     <h3 class="info">{{message}}</h3>
 </div>
-<h2>Welcome to Company registry!</h2>
-<table mat-table [dataSource]="companies" class="mat-elevation-z8 company-list-table" *ngIf="companies.length > 0">
+<h2>Companies</h2>
+<table mat-table [dataSource]="companies" class="mat-elevation-z8 company-list-table">>
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Name </th>
     <td mat-cell *matCellDef="let element"> {{element.name}} </td>

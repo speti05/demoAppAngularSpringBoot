@@ -19,9 +19,9 @@ export class ListComponent implements OnInit {
 
   ngOnInit() {
     this.getcompanies();
-    if(this.companies.length < 1) {
+/*     if(this.companies.length < 1) {
       this.showTable = false;
-    }
+    } */
   }
   
   getcompanies() {

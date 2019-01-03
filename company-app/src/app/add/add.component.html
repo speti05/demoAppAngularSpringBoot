@@ -1,3 +1,5 @@
+<h2>Add company</h2>
+
 <form [formGroup]="companyForm" (ngSubmit)="submitForm()" novalidate>
   <div *ngIf="validMessage != ''">
     <h3 class="info">{{validMessage}}</h3>

@@ -1,0 +1,11 @@
+<h2>Home</h2>
+
+<h1>Greeting</h1>
+isAuthenticated? : {{isAuthenticated}}
+<div *ngIf="isAuthenticated">
+    <p>The ID is {{greeting.id}}</p>
+    <p>The content is {{greeting.content}}</p>
+</div>
+<div *ngIf="!isAuthenticated">
+    <p>Login to see your greeting</p>
+</div>

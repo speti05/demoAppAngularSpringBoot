@@ -1,7 +1,9 @@
 <div class="main-container">
   <div class="top-menu">
-    <button mat-button routerLinkActive='active' [routerLink]="['/welcome']" >Home</button>
+    <button mat-button routerLinkActive='active' [routerLink]="['/home']">Home</button>
+    <button mat-button routerLinkActive='active' [routerLink]="['/list']" >Companies</button>
     <button mat-button routerLinkActive='active' [routerLink]="['/add']" >Add company</button>
+    <button mat-button (click)="logout()" >Logout</button>
   </div>
   <div class="top-cover">
       <div class="page-title">
@@ -9,7 +11,7 @@
       </div>
   </div>
   <div class="content-container">
-      <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
   </div>
 </div>
 

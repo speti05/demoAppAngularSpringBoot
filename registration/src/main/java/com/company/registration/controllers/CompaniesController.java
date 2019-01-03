@@ -1,5 +1,6 @@
 package com.company.registration.controllers;
 
+import java.security.Principal;
 import java.util.List;
 import java.util.Optional;
 
@@ -44,6 +45,11 @@ public class CompaniesController {
 	@GetMapping("/{id}")
 	public Company get(@PathVariable("id") long id) {
 		return companyRepository.getOne(id);
+	}
+	
+	@RequestMapping("/user")
+	public Principal user(Principal user) {
+		return user;
 	}
 	
 	@PutMapping("/{id}")
