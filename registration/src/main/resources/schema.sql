@@ -7,3 +7,9 @@ create table company
 	phone varchar(255) not null
 );
 
+create table USER_AUTH_DETAILS
+(
+  username varchar(255) not null,
+	password varchar(255) not null,
+	role varchar(255) not null
+)

@@ -9,10 +9,10 @@ import org.springframework.core.annotation.Order;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
+/*import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;*/
 
 @SpringBootApplication
 public class RegistrationApplication {
@@ -21,7 +21,7 @@ public class RegistrationApplication {
 		SpringApplication.run(RegistrationApplication.class, args);
 	}
 	
-	@Bean
+/*	@Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurerAdapter() {
             @Override
@@ -31,8 +31,8 @@ public class RegistrationApplication {
                 	.allowedMethods("GET", "POST", "HEAD", "PUT", "DELETE");
             }
         };
-    }
-	
+    }*/
+	/*
 	@Configuration
 	  @Order(SecurityProperties.BASIC_AUTH_ORDER)//ACCESS_OVERRIDE_ORDER
 	  protected static class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -53,5 +53,5 @@ public class RegistrationApplication {
 	      .withUser("user").password("test").roles("USER")
 	    .and()
 	      .withUser("manager").password("test").roles("USER", "ADMIN", "READER", "WRITER");
-	  }
+	  }*/
 }

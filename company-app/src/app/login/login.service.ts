@@ -12,7 +12,7 @@ export class LoginService {
   }
 
   authenticate(credentials, callback) {
-
+        //nem basices kell,hanem JSOONos
         const headers = new HttpHeaders(credentials ? {
             authorization : 'Basic ' + btoa(credentials.username + ':' + credentials.password)
         } : {});
